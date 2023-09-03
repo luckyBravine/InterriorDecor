@@ -9,14 +9,14 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className="w-full py-3 flex items-center justify-around fixed bg-none">
+    <nav className="w-full py-3 flex items-center justify-around fixed bg-none z-0">
       <img src={nbglogo} alt="Logo" className="w-[100px]" />
       <ul className="list-none sm:flex hidden items-center">
         {navLinks.map((nav, index) => (
           <li
             key={nav.id}
             className={`font-poppins font-normal cursor-pointer text-[16px] ${
-              active === nav.title ? "text-black" : "text-stone-900"
+              active === nav.title ? "text-white" : "text-slate-200"
             } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
             onClick={() => setActive(nav.title)}
           >
@@ -25,7 +25,7 @@ const Navbar = () => {
         ))}
       </ul>
 
-      <div className="justify-between sm:flex hidden items-center place-items-center ">
+      <div className="justify-between sm:flex hidden items-center place-items-center text-slate-200 ">
         <div className="flex font-poppins font-normal cursor-pointer text-[16px]">
           <h2 className="pr-1">EN</h2>|<h2 className="pl-1">SW</h2>
         </div>
