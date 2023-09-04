@@ -16,6 +16,11 @@ export const theme = {
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
     },
+    backgroundImage: {
+      'custom-image-one': "url('/src/assets/hdone.jpg')",
+      'custom-image-two': "url('/src/assets/hdtwo.jpg')",
+      'custom-image-three': "url('/src/assets/hdthree.jpg')",
+    },
   },
   screens: {
     xs: "480px",
