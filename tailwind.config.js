@@ -15,11 +15,16 @@ export const theme = {
     },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
+      'maison-de-artisan': ['Maison de Artisan', 'sans'],
     },
     backgroundImage: {
       'custom-image-one': "url('/src/assets/hdone.jpg')",
       'custom-image-two': "url('/src/assets/hdtwo.jpg')",
       'custom-image-three': "url('/src/assets/hdthree.jpg')",
+    },
+    blur: {
+      'blur': '0.8px', // Initial blur level
+      'hover-blur': '0', // No blur on hover
     },
   },
   screens: {

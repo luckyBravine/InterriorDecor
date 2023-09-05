@@ -1,16 +1,17 @@
-import nbglogo from "../assets/nbglogo.png";
+// import nbglogo from "../assets/nbglogo.png";
 import { navLinks } from "../constants";
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
 import { HiMenuAlt1 } from "react-icons/hi";
 import { BsFillPersonFill } from "react-icons/bs";
+import {BiSolidBuildingHouse} from "react-icons/bi"
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   return (
     <nav className="w-full py-3 flex items-center justify-around fixed bg-none z-0">
-      <img src={nbglogo} alt="Logo" className="w-[100px]" />
+      <BiSolidBuildingHouse className="text-slate-200 text-3xl" />
       <ul className="list-none sm:flex hidden items-center">
         {navLinks.map((nav, index) => (
           <li
