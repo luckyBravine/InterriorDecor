@@ -197,7 +197,7 @@ const App = () => {
           ref={(el) => {
             contentSlide.current = el;
           }}
-          className="flex relative justify-center mx-auto mt-[100px] md:mt-[290px] w-[70%] md:w-[30%] py-3 md:py-6"
+          className="flex relative justify-center mx-auto mt-[120px] md:mt-[290px] w-[70%] md:w-[30%] py-3 md:py-6"
         >
           <div
             className={`${state.isActive1 ? "active" : "opacity-0"} absolute`}
