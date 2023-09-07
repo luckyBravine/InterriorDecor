@@ -18,9 +18,9 @@ export const theme = {
       'maison-de-artisan': ['Maison de Artisan', 'sans'],
     },
     backgroundImage: {
-      'custom-image-one': "url('/src/assets/hdone.jpg')",
-      'custom-image-two': "url('/src/assets/hdtwo.jpg')",
-      'custom-image-three': "url('/src/assets/hdthree.jpg')",
+      'custom-image-one': "url('/src/assets/bedy.avif')",
+      'custom-image-two': "url('/src/assets/luxuryBedroom.avif')",
+      'custom-image-three': "url('/src/assets/photo.avif')",
     },
     blur: {
       'blur': '0.8px', // Initial blur level

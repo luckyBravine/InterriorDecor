@@ -1,4 +1,4 @@
-// import nbglogo from "../assets/nbglogo.png";
+
 import { navLinks } from "../constants";
 import { useState } from "react";
 import { AiOutlineClose } from "react-icons/ai";
@@ -10,7 +10,7 @@ const Navbar = () => {
   const [active, setActive] = useState("Home");
   const [toggle, setToggle] = useState(false);
   return (
-    <nav className="w-full py-3 flex items-center justify-around fixed bg-none z-0">
+    <nav className="w-full py-3 flex items-center justify-around mx-auto fixed bg-none z-0">
       <BiSolidBuildingHouse className="text-slate-200 text-3xl" />
       <ul className="list-none sm:flex hidden items-center">
         {navLinks.map((nav, index) => (
@@ -40,7 +40,7 @@ const Navbar = () => {
           className="w-[28px] h-[28px] object-contain"
           onClick={() => setToggle(!toggle)}
         >
-          {toggle ? <AiOutlineClose className="text-2xl" /> : <HiMenuAlt1 className="text-2xl" />}
+          {toggle ? <AiOutlineClose className="text-2xl text-slate-200" /> : <HiMenuAlt1 className="text-2xl text-slate-200" />}
         </div>
 
         <div
